@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        background-color: #fffffff5; /* Set the background to black */
+        color: #000; /* Set the text color to black */
+      }
+      .details-container {
+        height: 500px; /* Set the desired height */
+        width: 300px;
+     }
+     .experience-sub-title.project-title {
+      font-size: 18px; /* Set the desired font size for all elements with this class */
+     }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Deepika Balasubramanian</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Deepika Balasubramanian</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#tools" onclick="toggleMenu()">Tools</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile_pic.jpeg" alt="Deepika Balasubramanian profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello World!!!, I'm</p>
+        <h1 class="title">Deepika Balasubramanian</h1>
+        <p class="section__text__p2" style="font-size: 18px;">Decoding Data to Drive Decisions</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Deepika_DA_DE.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/deepika-balasubramanian/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Deepikabala14'"
+          />
+          <img
+          src="./assets/tableau.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://public.tableau.com/app/profile/deepika.balasubramanian/viz/HouseSalesPrice_16979083165070/KingCountyHouseSales?publish=yes '"
+        />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
+        <div class="section__pic-container">
+          <img src="./assets/Deepika_pic2.jpeg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div style="flex: 1;">
+          <div class="about-containers" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div class="details-container" style="height: 150px; flex: 0 0 calc(50% - 20px); box-sizing: border-box;">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>Data Analytics & Engineering: 2+ years<br />Software Developement: 2+ years</p>
+            </div>
+            <div class="details-container" style="height: 150px; flex: 0 0 calc(50% - 20px); box-sizing: border-box;">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>M.S Information Systems<br />B.E Computer Science<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Welcome to my Data Analyst portfolio, where data transforms into insights. Dive into my analytical endeavors, where I've unravelled patterns, crafted compelling visualizations, and driven data-driven decisions. Explore my proficiency in statistical analysis, programming, and data visualization, reflecting my dedication to turning raw data into actionable intelligenc
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="text-align: left;">
+              Dassault Systemes, Boston 
+              <span style="float: right; font-size: 13px;">Jan 2023 - Aug 2023</span>
+            </h2>            
+              <p style="text-align: left;"> <strong>Software Engineer</strong>  
+              ( Automation, Data Pipeline, Full Stack Developement, Dashboarding)
+              <ul style="text-align: left;font-size:12px;">
+                <li> Built an end-to-end automated data pipeline for consolidating Jenkins job statuses in real time, thereby reducing 60% of the monthly manual workload and saving approximately 40 hours per month. </li>
+                <li> Developed a Jenkins metrics dashboard, to analyze built statuses, job execution time, and resource utilization, leading to 30% improvement in visibility of job status across teams.</li>
+                <li> Created a text parser using python to extract key performance metrics (KPI) from Jenkins logs, effectively stored them into MySQL database and analytics platforms with 99.9% uptime, which enhanced root cause analysis process by 20%</li>
+                <li> Designed and developed release management application using Python Flask framework, integrating organization’s LDAP server and deployed it on Red Hat Linux server using wsgi, achieving 40 hrs manual effort reduction for team.</li>
+                <li> Implemented backend API services using Flask and SQL triggers that retrieves and reuses the most up-to-date release checklist from MySQL database, resulting in a savings of 20 hours of manual work</li>
+              </ul>
+            </p>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="text-align: left;">
+              Dassault Systemes, India
+              <span style="float: right; font-size: 13px;">Sept 2020 - Aug 2021</span>
+                </h2> 
+            <p style="text-align: left;"> <strong>Data Analyst</strong>  
+              ( Data Analytics, Python Developer, statistical Inference)
+              <ul style="text-align: left;font-size:12px;">
+                <li> Automated comprehensive biological data analysis process by orchestrating ETL data pipelines using python that extracted, analyzed, and reported drug-related data from raw texts, saving 35 manual hours per week for Bio pharmacist team.</li>
+                <li> Implemented Time Series Forecasting for COVID-19 data of 6 months using ARIMA, SARIMAX, and prophet contributing to resource allocation and planning. Created reports to visualize patterns and seasonality. </li>
+                <li> Optimized back-end infrastructure of drug discovery tool by developing and integrating a python parser that validated observational data, thereby improving decision-making capabilities by 50%</li>
+                <li> Successfully collaborated with cross-functional teams to streamline report generation processes, reducing report turnaround time by 30% and ensuring prompt response to 100% of ad-hoc requests from critical stakeholders.</li>
+              </ul>
+            </p>            
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#tools'"
+      />
+    </section>
+    <section id="tools">
+      <h1 class="title">Tools</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages/DB</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Python:</strong> Experienced</li>
+                <li><strong>SQL:</strong> Experienced</li>
+                <li><strong>Javascript:</strong> Experienced</li>
+                <li><strong>Shell Scripting:</strong> Experienced</li>
+                <li><strong>R:</strong> Experienced</li>
+                <li><strong>HTML:</strong> Intermediate</li>
+                <li><strong>CSS:</strong> Intermediate</li>
+                <li><strong>Java:</strong> Intermediate</li>
+                <li><strong>Scala:</strong> Intermediate</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="details-container">
+            <h2 class="experience-sub-title">Libraries</h2>
+            <div class="article-container">
+              <ul>
+          
+                <li><strong>Scikit-Learn:</strong> Experienced</li>
+            
+                <li><strong>Pandas:</strong> Experienced</li>
+                <li><strong>Numpy:</strong> Experienced</li>            
+                <li><strong>Seaborn:</strong> Experienced</li>
+                <li><strong>Matplotlib:</strong> Experienced</li>
+                <li><strong>Plotply:</strong> Experienced</li>
+                <li><strong>NLTK:</strong> Experienced</li>
+                <li><strong>Beautiful Soup:</strong> Experienced</li>      
+
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Spark:</strong> Experienced</li>
+                <li><strong>GitHub:</strong> Experienced</li>
+                <li><strong>Airflow:</strong> Experienced</li>
+                <li><strong>StreamLit:</strong> Experienced</li>
+                <li><strong>AWS:</strong> Experienced</li>
+                <li><strong>GCP:</strong> Intermediate</li>
+                <li><strong>BigQuery:</strong> Intermediate</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Domain</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Exploratory Data Analysis</strong> </li>
+                <li><strong>Data Management</strong> </li>
+                <li><strong>Data Modeling</strong> </li>
+                <li><strong>Data Warehousing</strong> </li>
+                <li><strong>Data Visualization</strong> </li>
+                <li><strong>Data Science</strong> </li>
+                <li><strong>Machine Learning</strong> </li>
+                <li><strong>Quantitative Analysis</strong> </li>
+                <li><strong>Statistical Inference</strong> </li>
+                <li><strong>Root Cause Analysis</strong> </li>
+                <li><strong>A/B Testing</strong> </li>
+                <li><strong>Causal Inference</strong> </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div style="overflow: auto; max-height: 700px; margin: 0 auto;">
+          <table>
+            <tr>
+
+
+
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #516942;">
+            <div class="article-container">
+              <img
+                src="./assets/FER.png"
+                alt="EmoSense: Empathetic Emotion Analysis"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">EmoSense: Empathetic Emotion Analysis</h2>
+            <p class="project-description" style="color: white;">Utilized transfer learning techniques to construct a real-time emotion detection tool designed to enhance comprehension of individuals' emotions in various scenarios, including therapy, interviews, and other applications.
+            </p>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AshwinUnnikrishnan/Facial-Emotion-Recognition'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+            <div class="article-container">
+              <img
+                src="./assets/content.png"
+                alt="Content Based Image Filtering"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Content Based Image Retrieval</h2>
+            <p class="project-description" style="color: white;">
+              Designed a basic image similarity search system in C++ with filter and histogram matching techniques to gain insights into filter operations within larger models, despite not achieving state-of-the-art performance.            </p>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AshwinUnnikrishnan/Pattern-Recognition-and-Computer-Vision-CS533-/tree/main/Project%202%20Content-based%20Image%20Retrieval'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/greek.png"
+                      alt="MNIST and Greek Symbol Recognition"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">MNIST and Greek Symbol Recognition</h2>
+                  <p class="project-description" style="color: white;">
+                    Created a straightforward image similarity search system utilizing C++ with filter and histogram matching techniques. Although not state-of-the-art in terms of performance, this project offers valuable insights into the operation of filters within complex models while maintaining computational efficiency.
+                  </p>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/AshwinUnnikrishnan/Pattern-Recognition-and-Computer-Vision-CS533-/tree/main/Project%205%20Recognition%20using%20Deep%20Networks'"
+                    >
+                      Github
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #516942;">
+            <div class="article-container">
+              <img
+                src="./assets/Object_detection.png"
+                alt="Simplified Custom Object Detection"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Simplified Custom Object Detection</h2>
+            <p class="project-description" style="color: white;">
+              Constructed a collection of ten distinct object categories, each consisting of 10 curated images. Employed fundamental image processing filters to facilitate object detection within this tailored dataset.            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AshwinUnnikrishnan/Pattern-Recognition-and-Computer-Vision-CS533-/tree/main/Project%203%20Real-time%20Object%202-D%20Recognition'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+            <div class="article-container">
+              <img
+                src="./assets/liveFilter.png"
+                alt="Real Time Filtering"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Real Time Filtering</h2>
+            <p class="project-description" style="color: white;">
+              Created different filters to add effects in live video, created filters like cartooning, flash effect, black & white, ghost etc.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AshwinUnnikrishnan/Pattern-Recognition-and-Computer-Vision-CS533-/tree/main/Project%201%20Real-time%20filtering'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Augmented_Reality.png"
+                      alt="Augmented Reality"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Augmented Reality</h2>
+                  <p class="project-description" style="color: white;">
+                    To calibrate a camera and then use the calibration to generate virtual objects in a scene. The end result should be a program that can detect a target and then place a virtual object in the scene relative to the target that moves and orients itself correctly given motion of the camera or target.
+                  </p>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/AshwinUnnikrishnan/Pattern-Recognition-and-Computer-Vision-CS533-/tree/main/Project%204%20Calibration%20and%20Augmented%20Reality'"
+                    >
+                      Github
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #516942;">
+            <div class="article-container">
+              <img
+                src="./assets/gan.png"
+                alt="Text-to-Image Mini Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Text-to-Image:Stable Diffusion</h2>
+            <p class="project-description" style="color: white;">
+              Employing Hugging Face's pretrained stable diffusion models for image generation while dissecting the process of how the desired image is crafted across various timestamps.            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AshwinUnnikrishnan/DeepLearning7150/blob/main/HW1/HW1_Pytorch.ipynb'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+            <div class="article-container">
+              <img
+                src="./assets/denoise.png"
+                alt="Denoising Autoencoders MNIST"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Denoising Autoencoders MNIST</h2>
+            <p class="project-description" style="color: white;">
+              Exploring the workings of Hugging Face's pretrained Denoising Autoencoder models, with a focus on understanding the denoising process and examining the model's output at various training epochs.
+            </p>
+              <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AshwinUnnikrishnan/DeepLearning7150'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/data.png"
+                      alt="Generating Synthetic Images : Denoising Autoencoders"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Generating Synthetic Images : Denoising Autoencoders</h2>
+                  <p class="project-description" style="color: white;">
+                    Exploring the workings of Hugging Face's pretrained Denoising Autoencoder models, for generating synthetic data from given dataset. This uses MNIST data to learn and generate new images.</p>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/AshwinUnnikrishnan/DeepLearning7150'"
+                    >
+                      Github
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr> 
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/recommender.jpg"
+                      alt="Movie Recommendation System"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
+                  <p class="project-description" style="color: white;">
+                  Developed a movie recommendation system using cosine similarity and TF-IDF techniques to provide personalized film suggestions based on user preferences and content similarity.
+                  </p>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/Deepikabala14/Movie-Recommender-System'"
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr>              
+            </tr>
+            <tr>
+            </tr>
+          </table>
+  </div>
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:balasubramanian.de@northeastern.edu">balasubramanian.de@northeastern.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/deepika-balasubramanian">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Deepika Balasubramanian. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
